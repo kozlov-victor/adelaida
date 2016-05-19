@@ -1,0 +1,54 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100%;
+    font-size: 18px;
+    font-family: serif;
+}
+
+h1 {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+}
+
+input.ng-invalid,textarea.ng-invalid,select.ng-invalid{
+    color: #c10000;
+}
+
+.table {
+    display: table;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    padding: 5px;
+}
+
+.cell, .cell * {
+    vertical-align: middle;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
