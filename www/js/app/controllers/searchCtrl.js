@@ -8,4 +8,8 @@ app.controller('searchCtrl',function($scope,i18n, model,editData){
     s.model = model;
     s.editData = editData;
 
+    s.search = function(){
+
+    }
+
 });

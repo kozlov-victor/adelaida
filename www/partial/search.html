@@ -1,0 +1,23 @@
+
+<form class="table">
+    <div class="row">
+        <div class="cell">
+            {{i18n.firstName}}
+        </div>
+        <div class="cell">
+            <input
+                    ng-model="searchFirstName">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell">
+            {{i18n.surname}}
+        </div>
+        <div class="cell">
+            <input
+                    ng-model="searchSurname">
+        </div>
+    </div>
+</form>
+
+<button ng-click="search(searchFirstName,searchSurname)"></button>

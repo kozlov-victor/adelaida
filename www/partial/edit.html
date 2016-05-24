@@ -6,6 +6,7 @@
         </div>
         <div class="cell">
             <input
+                    ng-disabled="!canEdit"
                     required
                     ng-model="editData.currChildInEdit.firstName">
         </div>
@@ -16,6 +17,7 @@
         </div>
         <div class="cell">
             <input
+                    ng-disabled="!canEdit"
                     required
                     ng-model="editData.currChildInEdit.surname">
         </div>
@@ -26,6 +28,7 @@
         </div>
         <div class="cell">
             <input
+                    ng-disabled="!canEdit"
                     required
                     ng-model="editData.currChildInEdit.lastName">
         </div>
@@ -35,7 +38,7 @@
             {{i18n.dob}}
         </div>
         <div class="cell">
-            <input type="date" ng-model="editData.currChildInEdit.dob" />
+            <input type="date" ng-disabled="!canEdit" ng-model="editData.currChildInEdit.dob" />
         </div>
     </div>
     <div class="row">
@@ -44,8 +47,9 @@
         </div>
         <div class="cell">
             <textarea
+                    ng-disabled="!canEdit"
                     ng-model="editData.currChildInEdit.comments"></textarea>
         </div>
     </div>
 </form>
-<button ng-click="saveChild(editData.currChildInEdit)" ng-disabled="editChildFrm.$invalid">{{i18n.save}}</button>
+<button ng-show="canEdit" ng-click="saveChild(editData.currChildInEdit)" ng-disabled="editChildFrm.$invalid">{{i18n.save}}</button>
