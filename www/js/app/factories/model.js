@@ -47,14 +47,12 @@ app.factory('model',function(){
 
     this.Child = BaseModel.extend({
         id:0,
-        firstName:'sd',
-        lastName:'xx',
-        surname:'saxasx',
+        firstName:'sdfsdfsdf',
+        lastName:'',
+        surname:'',
         dob:'',
-        comments:'asxasxasx',
-        construct:function(){
-            this.firstName = 'ddddddddddddd';
-        }
+        comments:'',
+        construct:function(){}
     });
     return this;
 });

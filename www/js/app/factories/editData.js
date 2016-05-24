@@ -2,9 +2,6 @@
 app.
 
 factory('editData',function(){
-
-    return {
-        currChildInEdit: null
-    }
-
+    this.currChildInEdit = null;
+    return this;
 });

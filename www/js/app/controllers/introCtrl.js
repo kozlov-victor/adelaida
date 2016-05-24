@@ -6,7 +6,7 @@ app.controller('introCtrl',function($scope,editData,model,i18n,utils){
     s.editData = editData;
 
     s.toCreateChildPage = function(){
-        editData.currChildInEdit = new model.Child();
+        s.editData.currChildInEdit = new model.Child();
         utils.nav('edit');
     };
 
