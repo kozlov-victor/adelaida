@@ -47,6 +47,8 @@ input.ng-invalid,textarea.ng-invalid,select.ng-invalid{
 
 textarea {
     width: 100%;
+    height: 200px;
+    overflow-y: scroll;
 }
 
 input {

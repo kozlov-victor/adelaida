@@ -14,7 +14,7 @@ app.
             }).
             when('/search',{
                 controller:'searchCtrl',
-                templateUrl:'partial/edit.html'
+                templateUrl:'partial/search.html'
             }).
             otherwise({redirectTo:'/intro'});
     });

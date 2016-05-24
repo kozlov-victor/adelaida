@@ -1,5 +1,5 @@
 
-<form class="table">
+<form name="childrenSearchFrm" class="table">
     <div class="row">
         <div class="cell">
             {{i18n.firstName}}
@@ -20,4 +20,8 @@
     </div>
 </form>
 
-<button ng-click="search(searchFirstName,searchSurname)"></button>
+<button ng-disabled = "!(searchFirstName || searchSurname)" ng-click="search(searchFirstName,searchSurname)">{{i18n.search}}</button>
+
+<div class="table">
+
+</div>
